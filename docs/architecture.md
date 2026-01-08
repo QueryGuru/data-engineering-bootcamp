@@ -127,3 +127,27 @@ Retry Strategy:
 - Avoid SELECT *
 - Limit streaming usage
 - Use batch where latency allows
+
+## API Exploration
+
+### Entity: Tickets
+Endpoint: /posts
+
+1. What uniquely identifies a record?
+→ id
+
+2. Which field can represent "last updated"?
+→ Not provided (we will simulate updated_at)
+
+3. How many records are returned?
+→ 100 records
+
+4. Is pagination supported?
+→ No (all records returned at once)
+
+5. Are there nested objects?
+→ No
+
+6. Are records mutable?
+→ Assume yes (simulate updates)
+
