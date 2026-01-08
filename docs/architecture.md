@@ -151,3 +151,22 @@ Endpoint: /posts
 6. Are records mutable?
 → Assume yes (simulate updates)
 
+### Entity: Users
+Endpoint: /users
+
+1. Unique identifier:
+→ id
+
+2. Update timestamp available?
+→ No
+
+3. Number of records:
+→ 10 users
+
+4. Nested fields?
+→ address, company
+
+5. Fields we care about:
+→ id, name, email
+
+
