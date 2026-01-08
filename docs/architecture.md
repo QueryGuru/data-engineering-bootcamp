@@ -200,4 +200,11 @@ Endpoint: /users
 Reason:
 - Not required for analytics use cases
 
+## Pagination Strategy (Client-Side)
+
+- Page-based pagination
+- Configurable page size
+- Loop until no records returned
+
+
 
