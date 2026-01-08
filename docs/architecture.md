@@ -169,4 +169,35 @@ Endpoint: /users
 5. Fields we care about:
 → id, name, email
 
+## Incremental Boundary (Simulated)
+
+- Source does not provide updated_at
+- We will simulate updated_at during ingestion
+- Incremental logic will be based on ingestion timestamp
+
+## Canonical Schemas
+
+### Ticket
+- id (int)
+- user_id (int)
+- title (string)
+- body (string)
+- ingested_at (timestamp)
+
+### User
+- id (int)
+- name (string)
+- email (string)
+- ingested_at (timestamp)
+
+## Out of Scope
+
+- Comments
+- Albums
+- Photos
+- Todos
+
+Reason:
+- Not required for analytics use cases
+
 
